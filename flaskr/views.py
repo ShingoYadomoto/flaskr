@@ -15,5 +15,5 @@ def add_entry():
             )
     db.session.add(entry)
     db.session.commit()
-    flash('New entry was successfully posted')
+    flash('投稿完了したよ〜')
     return redirect(url_for('show_entries'))
