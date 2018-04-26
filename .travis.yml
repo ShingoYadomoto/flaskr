@@ -4,3 +4,5 @@ python:
 install:
   - pip install Flask
   - pip install Flask-SQLAlchemy
+script:
+  - python manage.py
