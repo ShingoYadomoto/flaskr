@@ -16,7 +16,11 @@
             </li>
         </ul>
         <span class="navbar-text">
-          Navbar text with an inline element
+            {% if session.logged_in %}
+                <a href="{{ url_for('logout') }}">log out</a>
+            {% else %}
+                <a href="{{ url_for('login') }}">log in</a>
+            {% endif %}
         </span>
     </div>
 </nav>
