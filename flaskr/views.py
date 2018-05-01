@@ -1,4 +1,4 @@
-from flask import request, redirect, session, url_for, render_template, flash
+from flask import request, redirect, session, url_for, render_template, flash, json
 from flaskr import app, db
 from flaskr.models import Entry
 
